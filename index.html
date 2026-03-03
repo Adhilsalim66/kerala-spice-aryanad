@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Spice Aryanad | Authentic Kerala Flavours</title>
+    <meta name="description"
+        content="Authentic Kerala cuisine in Aryanad. Best Beef Biryani, Kothu Porotta, and Traditional Kerala Dishes. Dine-in, delivery, and drive-through available.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-logo">KS</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Kerala Spice <span>Aryanad</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="login-nav-item"><a href="#" id="login-trigger" class="login-btn">Login</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">Kerala Spice <span>Aryanad</span></h1>
+            <p class="reveal">Authentic Kerala Flavours in Aryanad</p>
+            <div class="hero-btns reveal">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/918281890770?text=I'd%20like%20to%20place%20an%20order"
+                    class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2>Our <span>Heritage</span></h2>
+                    <p>Kerala Spice Aryanad is a small but popular local restaurant known for bringing the soul of
+                        Kerala's culinary traditions to Aryanad. We pride ourselves on using authentic recipes,
+                        high-quality ingredients, and offering a warm, welcoming atmosphere.</p>
+                    <p>Whether you're looking for a quick drive-through snack or a hearty dine-in meal with family, we
+                        provide excellent taste at affordable prices that keep our customers coming back.</p>
+                </div>
+                <div class="about-image reveal">
+                    <img src="assets/kappa_beef.png" alt="Kappa and Beef Fry">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title reveal">Our <span>Specialties</span></h2>
+            <div class="menu-tabs reveal">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="meals">Meals</button>
+                <button class="tab-btn" data-category="biriyani">Biriyani</button>
+                <button class="tab-btn" data-category="traditional">Traditional</button>
+                <button class="tab-btn" data-category="combos">Combos</button>
+            </div>
+            <div class="menu-grid">
+                <!-- Menu items will be populated/sorted here -->
+                <div class="menu-card reveal" data-category="meals">
+                    <img src="assets/fish_fry.png" alt="Fish Fry Meals">
+                    <div class="menu-card-info">
+                        <h3>Fish Fry Meals</h3>
+                        <p>Traditional Kerala meals served on banana leaf with fish fry.</p>
+                        <span class="price">₹120</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="biriyani">
+                    <img src="assets/biryani.png" alt="Beef Biryani">
+                    <div class="menu-card-info">
+                        <h3>Beef Biryani</h3>
+                        <p>Aromatic rice cooked with tender beef and Kerala spices.</p>
+                        <span class="price">₹150</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="traditional">
+                    <img src="assets/kothu_porotta.png" alt="Special Kothu Porotta">
+                    <div class="menu-card-info">
+                        <h3>Special Kothu Porotta</h3>
+                        <p>Shredded porotta mixed with eggs, chicken, and spices.</p>
+                        <span class="price">₹110</span>
+                    </div>
+                </div>
+                <div class="menu-card reveal" data-category="combos">
+                    <img src="assets/kappa_beef.png" alt="Kappa with Beef Fry">
+                    <div class="menu-card-info">
+                        <h3>Kappa with Beef Fry</h3>
+                        <p>Mashed tapioca paired with our signature spicy beef fry.</p>
+                        <span class="price">₹140</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title reveal">A <span>Visual Feast</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="assets/hero.png" alt="Kerala Food Platter">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/biryani.png" alt="Pot Biryani">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/interior.png" alt="Restaurant Interior">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/chicken_curry.png" alt="Chicken Curry">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/ghee_rice.png" alt="Ghee Rice">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="assets/kothu_porotta.png" alt="Kothu Porotta">
+                    <div class="gallery-overlay"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title reveal">Our <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Dine-in</h3>
+                    <p>Enjoy your meal in our comfortable seating area with family and friends.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-car"></i>
+                    <h3>Drive-through</h3>
+                    <p>Quick and convenient service for those on the move.</p>
+                </div>
+                <div class="service-card reveal">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>Delivery</h3>
+                    <p>Get your favorite Kerala dishes delivered straight to your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title reveal">What Our <span>Customers Say</span></h2>
+            <div class="reviews-grid">
+                <div class="review-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best Beef Biryani I've ever had in Aryanad! The taste is authentic and very affordable."</p>
+                    <h4>- Rahul S.</h4>
+                </div>
+                <div class="review-card reveal">
+                    <div class="stars">★★★★★</div>
+                    <p>"Excellent Kothu Porotta and Kappa Beef. Great place for a quick meal through their
+                        drive-through."</p>
+                    <h4>- Anjali Nair</h4>
+                </div>
+                <div class="review-card reveal">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Affordable pricing and consistent taste. The Fish Fry Meals are a must-try!"</p>
+                    <h4>- Mohammed F.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal">Get in <span>Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bridge, Cherukulam, Aryanad, Kerala 695542</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+91 82818 90770</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Daily: 11:00 AM - 10:30 PM</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15783.5518464303!2d77.1472559!3d8.5913955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b583f7a83d73%3A0xe5a3c6ae18f6ea5!2sKerala%20Spice%20Aryanad!5e0!3m2!1sen!2sin!4v1709400000000!5m2!1sen!2sin"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <form class="contact-form reveal">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Kerala Spice <span>Aryanad</span></div>
+                <p>Authentic Kerala Flavours since 2020</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2024 Kerala Spice Aryanad. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="login-header">
+                <h2>Welcome <span>Back</span></h2>
+                <p>Login to your Kerala Spice account</p>
+            </div>
+            <form id="login-form">
+                <div class="form-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-btns">
+        <a href="tel:+918281890770" class="float-btn call-btn" title="Call Us"><i class="fas fa-phone-alt"></i></a>
+        <a href="https://wa.me/918281890770" class="float-btn wa-btn" title="WhatsApp Us"><i
+                class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
